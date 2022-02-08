@@ -49,23 +49,23 @@ function submit() {
   } else return;
 }
 
-function errorHandler(errorText, disply, containerStatus, status) {
+function errorHandler(errorText, display, containerStatus, status) {
   const errorP = document.querySelector("[data-error]");
   const errorContainer = document.querySelector("[data-error-container]");
 
   errorP.textContent = errorText;
   errorP.className = status;
-  errorContainer.style.display = disply;
+  errorContainer.style.display = display;
   errorContainer.className = containerStatus;
 }
 
-function answerHandler(answerText, disply, containerStatus, status) {
+function answerHandler(answerText, display, containerStatus, status) {
   const answerP = document.querySelector("[data-correct]");
   const answerContainer = document.querySelector("[data-correct-container]");
 
   answerP.textContent = answerText;
   answerP.className = status;
-  answerContainer.style.display = disply;
+  answerContainer.style.display = display;
   answerContainer.className = containerStatus;
 }
 
