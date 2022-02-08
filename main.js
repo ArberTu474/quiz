@@ -15,7 +15,7 @@ function alternativesValidation() {
     al4.checked == true &&
     al5.checked == true
   ) {
-    answerHandler("SAKTË", "block", "correct-container", "correct");
+    answerHandler("SAKTË!", "block", "correct-container", "correct");
   } else {
     answerHandler(
       "Përgjigja juaj nuk është e skatë!",
@@ -31,10 +31,10 @@ function nameValidation() {
   const email = document.querySelector("[data-email]");
 
   if (uname.value.trim() === "") {
-    errorHandler("Vendosni një emër", "block", "error-container", "error");
+    errorHandler("Vendosni emrin", "block", "error-container", "error");
     focusDiv(credentionalsContainer);
   } else if (email.value.trim() === "") {
-    errorHandler("Vendosni një mbiemër", "block", "error-container", "error");
+    errorHandler("Vendosni mbiemrin", "block", "error-container", "error");
     focusDiv(credentionalsContainer);
   } else {
     errorHandler("", "none");
