@@ -16,54 +16,97 @@
 
     <main>
       <div class="container">
-        <div class="credentionals">
+        <div class="credentionals" data-credentionals>
           <form name="credentionals" class="credentionlas-form" action="">
             <div class="fields-container">
               <label class="label" for="name"
                 ><span class="required">*</span>Name</label
               >
-              <input type="text" name="name" class="input-field" />
+              <input type="text" name="name" class="input-field" data-uname />
             </div>
             <div class="fields-container">
               <label class="label" for="surname"
                 ><span class="required">*</span>Surname</label
               >
-              <input type="text" name="surname" class="input-field" />
+              <input
+                type="text"
+                name="surname"
+                class="input-field"
+                data-email
+              />
             </div>
           </form>
+          <div class="error-container" data-error-container>
+            <p id="error" class="error" data-error></p>
+          </div>
         </div>
 
-        <div class="question-container">
-          <h2 class="question">What can you see in the picture?</h2>
+        <div class="question-container" data-questions-container>
+          <h2 class="question">Cilët trupa gjeometrik dalloni?</h2>
           <div class="img"></div>
           <form action="" name="alternatives">
             <div class="alternatives">
               <div class="alternative">
-                <input class="checkbox" type="checkbox" name="check1" />
-                <label for="check1" class="option alternative-name">Math</label>
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="check1"
+                  data-check1
+                />
+                <label for="check1" class="option alternative-name">Kub</label>
               </div>
               <div class="alternative">
-                <input class="checkbox" type="checkbox" name="check2" />
-                <label for="check2" class="option alternative-name">Math</label>
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="check2"
+                  data-check2
+                />
+                <label for="check2" class="option alternative-name">Kon</label>
               </div>
               <div class="alternative">
-                <input class="checkbox" type="checkbox" name="check3" />
-                <label for="check3" class="option alternative-name">Math</label>
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="check3"
+                  data-check3
+                />
+                <label for="check3" class="option alternative-name"
+                  >Sferë</label
+                >
               </div>
               <div class="alternative">
-                <input class="checkbox" type="checkbox" name="check4" />
-                <label for="check4" class="option alternative-name">Math</label>
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="check4"
+                  data-check4
+                />
+                <label for="check4" class="option alternative-name"
+                  >Piramidë</label
+                >
               </div>
               <div class="alternative">
-                <input class="checkbox" type="checkbox" name="check5" />
-                <label for="check5" class="option alternative-name">Math</label>
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="check5"
+                  data-check5
+                />
+                <label for="check5" class="option alternative-name"
+                  >Cilindër</label
+                >
               </div>
             </div>
           </form>
+          <div class="" data-correct-container>
+            <p id="correct" class="" data-correct></p>
+          </div>
         </div>
+
         <div class="action-container">
-          <button class="button submit">Submit</button>
-          <button class="button cancel">Cancel</button>
+          <button class="button submit" onclick="submit()">Submit</button>
+          <button class="button cancel" onclick="reset()">Cancel</button>
         </div>
       </div>
       <footer>
@@ -97,5 +140,7 @@
         </div>
       </footer>
     </main>
+
+    <script src="main.js"></script>
   </body>
 </html>
