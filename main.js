@@ -119,5 +119,8 @@ function focusDiv(focusElement) {
 }
 
 function reset() {
-  location.reload();
+  const confirmationText = "A doni të bëni Cancel formularin?";
+  if (confirm(confirmationText) == true) {
+    location.reload();
+  }
 }
