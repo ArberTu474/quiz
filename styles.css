@@ -262,7 +262,7 @@ footer {
   text-align: center;
 }
 
-.code svg {
+.code img {
   fill: var(--clr-text-color-light);
   height: 3rem;
   width: 3rem;
